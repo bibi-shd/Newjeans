@@ -1,2 +1,0 @@
-# Newjeans
-Bunnies
