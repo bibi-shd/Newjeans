@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>กลุ่มแฟนคลับ — Bunneis</title>
+  <meta name="description" content="เข้าร่วมกลุ่มแฟนคลับ Bunneis Club — แชร์รูป สร้างกลุ่ม แชทกับเพื่อนแฟนคลับ">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <!-- Fan Club Hero -->
+  <section class="fanclub-hero">
+    <div class="container">
+      <span class="hero-badge">🐰 Bunneis Official Fan Club</span>
+      <h1 style="font-family: var(--ff-heading); font-size: var(--fs-hero); font-weight: var(--fw-extrabold); margin-bottom: var(--sp-md);">เข้าร่วมครอบครัว<br>Bunneis Club</h1>
+      <p style="font-size: clamp(1rem, 2vw, 1.15rem); opacity: 0.85; max-width: 560px; margin: 0 auto var(--sp-2xl);">แชร์รูป สร้างอัลบั้ม พูดคุยกับเพื่อนแฟนคลับ — เหมือน Instagram สำหรับ Bunnies!</p>
+    </div>
+  </section>
+
+  <!-- Social Features Tabs -->
+  <section class="section">
+    <div class="container">
+      <!-- Tab Navigation -->
+      <div class="fc-tabs">
+        <button class="fc-tab-btn active" data-tab="gallery">📸 อัลบั้มรูปภาพ</button>
+        <button class="fc-tab-btn" data-tab="groups">👥 กลุ่ม Bunnies</button>
+        <button class="fc-tab-btn" data-tab="chat">💬 แชท</button>
+        <button class="fc-tab-btn" data-tab="games">🎮 เกม</button>
+      </div>
+      <!-- Tab Content -->
+      <div id="fc-tab-content"></div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section" style="background: var(--clr-white);">
+    <div class="container">
+      <h2 class="section-title reveal">สิทธิพิเศษสมาชิก</h2>
+      <p class="section-subtitle reveal">เป็นสมาชิก Bunneis Club เพื่อรับสิทธิพิเศษเหล่านี้</p>
+      <div class="grid grid-4">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">📸</div>
+          <h3 class="benefit-title">แชร์รูปไม่จำกัด</h3>
+          <p class="benefit-desc">อัปโหลดรูปภาพไม่จำกัดจำนวนและขนาดไฟล์ สร้างอัลบั้มได้ไม่จำกัด</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-icon">👥</div>
+          <h3 class="benefit-title">สร้างกลุ่มแฟนคลับ</h3>
+          <p class="benefit-desc">สร้างกลุ่มพูดคุยกับเพื่อนแฟนคลับ แลกเปลี่ยนข่าวสารและของสะสม</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-2">
+          <div class="benefit-icon">💬</div>
+          <h3 class="benefit-title">แชทส่วนตัว</h3>
+          <p class="benefit-desc">แชทกับสมาชิกแบบตัวต่อตัว เหมือน Instagram DM!</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-3">
+          <div class="benefit-icon">🎁</div>
+          <h3 class="benefit-title">ส่วนลด 15%</h3>
+          <p class="benefit-desc">รับส่วนลดพิเศษสำหรับทุกการสั่งซื้อตลอดการเป็นสมาชิก</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="reveal">
+          <div class="stat-number">5,000+</div>
+          <div class="stat-label">สมาชิก</div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">รูปภาพ</div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">กลุ่ม</div>
+        </div>
+        <div class="reveal reveal-delay-3">
+          <div class="stat-number">🆓</div>
+          <div class="stat-label">สมัครฟรี</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign Up Form -->
+  <section class="section" style="background: var(--clr-white);">
+    <div class="container">
+      <h2 class="section-title reveal">สมัครสมาชิก Bunneis Club</h2>
+      <p class="section-subtitle reveal">กรอกข้อมูลด้านล่างเพื่อเข้าร่วมครอบครัวของเรา — ฟรี!</p>
+      <form class="signup-form reveal" onsubmit="event.preventDefault(); alert('🐰 ขอบคุณที่สมัครสมาชิก Bunneis Club!');">
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="ชื่อ" required id="signup-firstname">
+          <input type="text" class="form-input" placeholder="นามสกุล" required id="signup-lastname">
+        </div>
+        <input type="email" class="form-input" placeholder="อีเมล" required id="signup-email">
+        <input type="tel" class="form-input" placeholder="เบอร์โทรศัพท์" id="signup-phone">
+        <select class="form-input" id="signup-bias" style="color: var(--clr-gray-400);">
+          <option value="">เลือกศิลปินที่ชื่นชอบ</option>
+          <option value="minji">Minji</option>
+          <option value="hanni">Hanni</option>
+          <option value="danielle">Danielle</option>
+          <option value="haerin">Haerin</option>
+          <option value="hyein">Hyein</option>
+          <option value="all">ชอบทุกคน! 🐰</option>
+        </select>
+        <button type="submit" class="btn btn-primary" style="width: 100%;" id="signup-submit">🐰 สมัครสมาชิกฟรี</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/fanclub.js"></script>
+</body>
+</html>
